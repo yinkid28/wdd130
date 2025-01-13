@@ -15,6 +15,7 @@ h1 {
 
 main img {
     width: 150px;
+    max-width: 400px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
