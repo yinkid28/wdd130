@@ -92,13 +92,12 @@ section h2 {
 .adventure-container {
     display: flex;
     flex-direction: column; /* Display items as columns */
-    align-items: left;
     padding: 2rem;
     gap: 1.5rem;
 }
 
 .adventure-item {
-    text-align: left;
+    text-align: center;
     max-width: 300px;
 }
 
