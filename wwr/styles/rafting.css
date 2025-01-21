@@ -82,6 +82,7 @@ article p {
 
 article img {
     max-width: 150px;
+    float: right;
 }
 
 section h2 {
