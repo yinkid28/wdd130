@@ -1,11 +1,11 @@
 /* Define CSS Variables */
 :root {
-    --primary-color: #eccd9d; /* light brown */
-    --secondary-color: #ffffff; /* White */
-    --text-color: #333333; /* Dark Gray */
+    --primary-color: #eccd9d; 
+    --secondary-color:  #D99E41; 
+    --text-color: #000033; 
     --font-family: 'Merriweather', serif;
     --font-family-alt: 'Roboto', sans-serif;
-    --background-blue: rgba(70, 70, 225, 0.7); /* Blue with opacity */
+    --background-white: #FFFFFF; 
 }
 
 /* Global Styles */
@@ -38,7 +38,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--secondary-color);
+    color: var(--text-color);
     overflow: hidden;
 }
 
@@ -64,8 +64,8 @@ article {
     position: absolute;
     bottom: 10%;
     left: 10%;
-    background-color: var(--background-blue);
-    color: var(--secondary-color);
+    background-color: var(--background-white);
+    color: var(--text-color);
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -86,7 +86,7 @@ article img {
 }
 
 section h2 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* Adventure Section */
@@ -117,7 +117,7 @@ section h2 {
 /* Footer */
 footer {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--text-color);
     text-align: center;
     padding: 1rem 0;
 }
