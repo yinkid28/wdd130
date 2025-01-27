@@ -4,7 +4,7 @@
 :root {
     --primary-color: #2a6da2; /* Adjust based on your theme */
     --secondary-color: #ffffff;
-    --accent-color: #ffcc00;
+    --accent-color: #fffbed;
     --text-color: #333;
     --background-color: #f4f4f4;
     --font-primary: 'Merriweather', serif;
@@ -108,7 +108,7 @@ main {
 }
 
 article p {
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* History Section */
