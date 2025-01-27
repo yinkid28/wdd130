@@ -107,6 +107,10 @@ main {
     border-radius: 50%;
 }
 
+article p {
+    color: var(--primary-color);
+}
+
 /* History Section */
 section {
     margin-bottom: 2rem;
