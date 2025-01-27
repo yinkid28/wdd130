@@ -20,7 +20,12 @@ body {
     background-color: var(--background-color);
 }
 
-h1, h2 {
+h2 {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+}
+
+h1 {
     font-family: var(--font-primary);
     color: var(--primary-color);
 }
