@@ -27,7 +27,7 @@ h2 {
 
 h1 {
     font-family: var(--font-primary);
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 /* Header styles */
@@ -66,6 +66,7 @@ main {
 
 /* Hero Section */
 .hero {
+    position: relative; /* Establishes positioning context */
     text-align: center;
     padding: 2rem;
     background-color: var(--accent-color);
@@ -73,9 +74,25 @@ main {
 }
 
 .hero img {
+    position: relative;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: var(--secondary-color); 
+    font-size: 2.5rem;
+    font-family: var(--font-primary);
+    background-color: rgba(128, 128, 128, 0.7);
+    width: 90%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    margin: 0;
 }
 
 .hero article {
@@ -165,4 +182,3 @@ footer a img {
 footer a img:hover {
     transform: scale(1.1);
 }
-
