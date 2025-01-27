@@ -27,7 +27,7 @@ h2 {
 
 h1 {
     font-family: var(--font-primary);
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 /* Header styles */
