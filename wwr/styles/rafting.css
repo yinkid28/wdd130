@@ -1,10 +1,8 @@
-/* CSS for White Water Rafting About Us Page */
-
 /* Define CSS variables for consistency */
 :root {
     --primary-color: #2a6da2; /* Adjust based on your theme */
     --secondary-color: #ffffff;
-    --accent-color: #fffbed;
+    --accent-color: #ffcc00;
     --text-color: #333;
     --background-color: #f4f4f4;
     --font-primary: 'Merriweather', serif;
@@ -20,14 +18,9 @@ body {
     background-color: var(--background-color);
 }
 
-h2 {
+h1, h2 {
     font-family: var(--font-primary);
     color: var(--primary-color);
-}
-
-h1 {
-    font-family: var(--font-primary);
-    color: var(--secondary-color);
 }
 
 /* Header styles */
@@ -46,6 +39,7 @@ header img {
 
 header nav {
     display: flex;
+    justify-content: flex-end; 
     gap: 1rem;
 }
 
@@ -59,6 +53,13 @@ header nav a[aria-current="page"] {
     text-decoration: underline;
 }
 
+header nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 1rem; 
+    padding: 0;
+}
+
 /* Main content styles */
 main {
     padding: 2rem;
@@ -66,7 +67,6 @@ main {
 
 /* Hero Section */
 .hero {
-    position: relative; /* Establishes positioning context */
     text-align: center;
     padding: 2rem;
     background-color: var(--accent-color);
@@ -74,25 +74,9 @@ main {
 }
 
 .hero img {
-    position: relative;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    display: block;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: var(--secondary-color); 
-    font-size: 2.5rem;
-    font-family: var(--font-primary);
-    background-color: rgba(128, 128, 128, 0.7);
-    width: 90%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
-    margin: 0;
 }
 
 .hero article {
@@ -105,9 +89,9 @@ main {
 .hero article img {
     max-width: 150px;
     border-radius: 50%;
-}
+} 
 
-article p {
+.hero article p {
     color: var(--text-color);
 }
 
@@ -122,41 +106,35 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
-/* Adventure Section Styles */
+/* Adventure Section */
 .adventure-container {
-    margin-bottom: 2rem;
-}
-
-.adventure-container h2 {
-    text-align: center;
-    margin-bottom: 1.5rem; 
-    color: var(--primary-color);
-    font-size: 2rem;
-    border-bottom: 2px solid var(--primary-color); 
-    padding-bottom: 0.5rem; 
-}
-
-.adventure-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    padding: 1rem;
+}
+
+.adventure-header {
+    grid-column: 1 / -1; /* Make sure header spans the full width */
+    margin-bottom: 1rem; /* Adds space below the header */
+    text-align: center; /* Center the header text */
+}
+
+.adventure-item {
     text-align: center;
 }
 
 .adventure-item img {
-    width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 0 auto;
 }
 
-.adventure-item figcaption {
+.adventure-item p {
     margin-top: 0.5rem;
     font-weight: bold;
     color: var(--primary-color);
 }
-
 
 /* Footer styles */
 footer {
@@ -177,11 +155,12 @@ footer a {
     margin-left: 1rem;
 }
 
-footer a img {
-    max-height: 40px; /* Adjust size */
-    transition: transform 0.3s ease;
-    filter: none; /* Remove if unnecessary */
+#social-icons img {
+   display: inline-block;
+   max-height: 30px;
+   transition: transform 0.3s ease;
 }
+
 
 footer a img:hover {
     transform: scale(1.1);
