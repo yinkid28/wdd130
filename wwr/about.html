@@ -16,20 +16,25 @@
 <body>
     <!-- Header Section -->
     <header>
-        <img src="./images/z-wwr-blue.jpg" alt="White Water Rafting Logo" id="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" aria-current="page">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+        <div id="header-grid">
+            <img src="./images/z-wwr-blue.jpg" alt="White Water Rafting Logo" id="logo">
+            <h1>White Water Rafting</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Section -->
     <main>
         <!-- Hero Section -->
         <div class="hero">
-            <img src="./images/whitewater.jpg  " alt="Hero Image of Rafting">
+            <img src="./images/whitewater.jpg" alt="Hero Image of Rafting">
             <h1>White Water Rafting</h1>
             <article>
                 <img src="./images/rafting_client.jpg" alt="Happy Client">
@@ -42,31 +47,43 @@
         <!-- History Section -->
         <section>
             <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris sit amet elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris sit amet elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
         </section>
 
         <!-- Adventure Section -->
         <section class="adventure-container">
             <h2>Adventure Awaits You!</h2>
-            <div class="adventure-item">
-                <img src="./images/peaceful_rapids.jpg" alt="Adventure Image 1">
-                <p>Peaceful Rapids</p>
-            </div>
-            <div class="adventure-item">
-                <img src="./images/colorado_river.jpg" alt="Adventure Image 2">
-                <p>Colorado River</p>
-            </div>
-            <div class="adventure-item">
-                <img src="./images/rafting.jpg" alt="Adventure Image 3">
-                <p>Rafting</p>
-            </div>
-            <div class="adventure-item">
-                <img src="./images/whitewater.jpg" alt="Adventure Image 4">
-                <p>Smokey River</p>
-            </div>
-            <div class="adventure-item">
-                <img src="images/boise_river.jpg" alt="Adventure Image 5">
-                <p>Boise River</p>
+            <div class="adventure-grid">
+                <div class="adventure-item">
+                    <figure>
+                        <img src="./images/peaceful_rapids.jpg" alt="Adventure Image 1">
+                        <figcaption>Peaceful Rapids</figcaption>
+                    </figure>
+                </div>
+                <div class="adventure-item">
+                    <figure>
+                        <img src="./images/colorado_river.jpg" alt="Adventure Image 2">
+                        <figcaption>Colorado River</figcaption>
+                    </figure>
+                </div>
+                <div class="adventure-item">
+                    <figure>
+                        <img src="./images/rafting.jpg" alt="Adventure Image 3">
+                        <figcaption>Rafting</figcaption>
+                    </figure>
+                </div>
+                <div class="adventure-item">
+                    <figure>
+                        <img src="./images/whitewater.jpg" alt="Adventure Image 4">
+                        <figcaption>Smokey River</figcaption>
+                    </figure>
+                </div>
+                <div class="adventure-item">
+                    <figure>
+                        <img src="images/boise_river.jpg" alt="Adventure Image 5">
+                        <figcaption>Boise River</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
     </main>
@@ -74,9 +91,11 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 White Water Rafting | Created by Adeyinka Adedayo</p>
-        <a href="https://facebook.com"><img src="images/facebook_image.jpeg" alt="Facebook"></a>
-        <a href="https://twitter.com"><img src="images/x_icon.jpeg" alt="Twitter"></a>
-        <a href="https://instagram.com"><img src="images/insta_image.jpg" alt="Instagram"></a>
+        <div id="social-icons">
+            <a href="https://facebook.com"><img src="./images/facebook_image.jpeg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/x_icon.jpeg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/insta_image.jpg" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 </html>
