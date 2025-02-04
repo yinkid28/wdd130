@@ -6,6 +6,14 @@
     <meta name="description" content="Contact White Water Rafting for inquiries, reservations, or suggestions.">
     <meta name="author" content="Adeyinka Adedayo">
     <title>Contact Us - White Water Rafting</title>
+    <!-- Preconnect Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Google Font Reference -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -26,7 +34,7 @@
     <main>
         <section class="contact-info">
             <div class="company-info">
-                <h2>Company Information</h2>
+                <h1>Company Information</h1>
                 <p><strong>Address:</strong> 123 Rafting Rd, Adventure City, 12345</p>
                 <p><strong>Phone:</strong> (123) 456-7890</p>
                 <p><strong>Email:</strong> info@rafting.com</p>
@@ -36,7 +44,7 @@
             </div>
 
             <div class="employee-profiles">
-                <h2>Employee Profile</h2>
+                <h1>Employee Profile</h1>
                 <div class="employees-container">
                     <div class="employee-card">
                         <img src="images/employeejpeg.jpeg" alt="John Doe">
@@ -57,7 +65,7 @@
             </div>
 
             <div class="contact-form">
-                <h2>Contact Form Field</h2>
+                <h1>Contact Form Field</h1>
                 <form action="#" method="post">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
@@ -69,11 +77,25 @@
                     <input type="text" id="address" name="address" required>
                     
                     <label for="message-purpose">Purpose of Message:</label>
-                    <select id="message-purpose" name="message-purpose">
-                        <option value="general">General Enquiry</option>
-                        <option value="reservation">Reservation Questions</option>
-                        <option value="suggestion">Website Suggestion</option>
-                    </select>
+<fieldset>
+    <legend>Select the purpose of your message:</legend>
+
+    <label>
+        <input type="radio" name="message-purpose" value="general" id="general-inquiry">
+        General Inquiry
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="message-purpose" value="reservation" id="reservation-question">
+        Reservation Question
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="message-purpose" value="suggestion" id="website-suggestion">
+        Website Suggestion
+    </label>
+</fieldset>
+    
                     
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
